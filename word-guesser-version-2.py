@@ -12,19 +12,21 @@ def main():
     print("The word is " + display)
     while count < guess:
         user_input = input("Choose a letter (guess #{})".format(count+1))
-        if len(user_input) == 1:
-            num_occurrences = word.count(user_input)
-            pos = -1;
-            for i in range(num_occurrences):
-                pos = word.find(user_input, pos+1)
-                display = display[:pos] + user_input +display[pos+1:]
+        while len(user_input) !=1:
+            user_input = input("Choose a letter (guess #{})".format(count+1))
+        
+        num_occurrences = word.count(user_input)
+        pos = -1;
+        for i in range(num_occurrences):
+            pos = word.find(user_input, pos+1)
+            display = display[:pos] + user_input +display[pos+1:]
 
 
-                if '-' not in display:
-                    print("Congratulations!")
-                    break
-            print(display)
-            count += 1
+            if '-' not in display:
+                print("Congratulations!")
+                break
+        print(display)
+        count += 1
 
     if '-' in display:
         print("You're lost. The word is " + word)
