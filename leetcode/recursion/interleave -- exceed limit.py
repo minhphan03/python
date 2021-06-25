@@ -1,7 +1,7 @@
 #brute force
 class Solution:
     def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
-        #use recursive
+        #use recursion
         #for every recursion, we find combinations with the next thingy, and make combinations until find we run out of combinations. Check every combinations (brute-force)
         if (len(s1)+len(s2)!=len(s3)):
             return False
