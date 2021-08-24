@@ -12,6 +12,7 @@ class Solution:
             return True
         ans = False
         if (n1<len(s1)):
+            # |= is bit-wise operator for OR
             ans |= self.is_Interleave(s1,n1+1,s2,n2,res+s1[n1],s3)
         if (n2<len(s2)):
             ans |= self.is_Interleave(s1,n1,s2,n2+1,res+s2[n2],s3)
