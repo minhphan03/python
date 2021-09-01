@@ -1,3 +1,6 @@
+# Python
+For the submissions in Hackerrank and Leetcode, there are some problems that I replicated and learned from different solvers. I fully accredited them in those submissions. For the purposes of this repository, I purely use them for my learning and problem-solving processes. 
+
 ## A list of resources I found helpful on the Internet:
 
 #### Cheatsheets
