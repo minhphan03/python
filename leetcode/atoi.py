@@ -1,3 +1,5 @@
+# string to integer method on C/C++
+
 class Solution:
     def myAtoi(self,s: str) -> int:
         isNeg = False
